@@ -73,7 +73,7 @@ a {
 
 /* Navigation */
 .navbar-area {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 5rem;
   font-weight: 500;
   box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
@@ -118,7 +118,7 @@ nav ul li a:hover::after {
 
 .home-area {
   margin: 4rem 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   grid-template-columns: auto auto auto;
   height: 22rem;
@@ -178,7 +178,7 @@ nav ul li a:hover::after {
  /* About ME */
 
 .about-area{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   grid-template-columns: 400px 500px;
   column-gap: 5rem;
   justify-items:baseline;
@@ -213,11 +213,11 @@ nav ul li a:hover::after {
 .skills-area{
   margin-top: 4rem;
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .skills-Lang{
   margin: 8rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .skills-Lang h2{
   font-size: 30px;
@@ -231,14 +231,14 @@ nav ul li a:hover::after {
 }
 .skill-text{
   width: 100px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin: 0 15px;
   text-align: left;
   line-height: 50px;
 }
 .skill-graph{
   width: 80%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   list-style: none;
 }
 .bar{
@@ -336,7 +336,7 @@ nav ul li a:hover::after {
 
 /*  Projects   */
 .project-area{
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .project-title{
   text-align: center;
@@ -346,7 +346,7 @@ nav ul li a:hover::after {
   margin: 5rem auto;
   width: 850px;
   height: 450px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background: var(--first-color-second);
   position: relative;
   border-radius: 15px;
@@ -390,7 +390,7 @@ nav ul li a:hover::after {
 
 /* Contact Me Area */
 .contact-area{
-  border: 1px solid rgb(102, 255, 0);
+  /* border: 1px solid rgb(102, 255, 0); */
   text-align: center;
   margin: 30px 0;
   height: 550px;
