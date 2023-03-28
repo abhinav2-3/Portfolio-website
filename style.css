@@ -8,13 +8,14 @@
 body{
   background-color: var(--body-color);
   color: var(--primary-color);
+  /* border: 1px solid red; */
 }
 html{
   scroll-behavior: smooth;
 }
 .hero {
   padding-inline: 8rem;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   font-family: var(--body-font);
 }
 /* Utility Tools */
@@ -142,12 +143,14 @@ nav ul li a:hover::after {
 
 .home-data h3{
   color: var(--title-color);
+  margin-bottom: 25px;
 }
 .home-data p {
   color: var(--text-color);
   margin-top: 8px;
 }
-.home-profile img{
+/* Imgs of both Home and About Section */
+.home-profile img, .about-profile img{
   width: 350px;
   border-radius: 10px;
   box-shadow: 1px 1px 20px 10px var(--first-color);
@@ -178,8 +181,8 @@ nav ul li a:hover::after {
  /* About ME */
 
 .about-area{
-  /* border: 1px solid red; */
-  grid-template-columns: 400px 500px;
+  border: 1px solid red;
+  grid-template-columns: 40% 50%;
   column-gap: 5rem;
   justify-items:baseline;
   margin: 40px 0;
@@ -187,11 +190,7 @@ nav ul li a:hover::after {
 .about-title{
   text-align: center;
 }
-.about-profile img{
-  width: 350;
-  border-radius: 10px;
-  box-shadow: 1px 1px 20px 10px var(--first-color); 
-}
+
 .about-data{
   justify-self: center;
   position: relative;
@@ -209,7 +208,7 @@ nav ul li a:hover::after {
   padding: 10px 10px;
 }
 
-/* Skills */
+/* ======== Skills ======== */
 .skills-area{
   margin-top: 4rem;
   text-align: center;
@@ -334,9 +333,11 @@ nav ul li a:hover::after {
   }
 }
 
-/*  Projects   */
+/* ========= Projects ========= */
+
 .project-area{
-  /* border: 1px solid red; */
+  border: 1px solid red;
+  margin: auto;
 }
 .project-title{
   text-align: center;
@@ -379,24 +380,24 @@ nav ul li a:hover::after {
 }
 .uil-arrow-circle-left{
   position: absolute;
-  top: 30vh;
+  top: 35vh;
   left: 20px;
 }
 .uil-arrow-circle-right{
   position: relative;
-  top: 30vh;
+  top: 35vh;
   right: -790px;
 }
 
-/* Contact Me Area */
+/* ========  Contact Me Area ======== */
 .contact-area{
-  /* border: 1px solid rgb(102, 255, 0); */
+  border: 1px solid rgb(102, 255, 0);
   text-align: center;
   margin: 30px 0;
   height: 550px;
 }
 .contact-data{
-  grid-template-columns: 40% 100%; 
+  grid-template-columns: 40% 60%; 
   margin-top: 30px;
 }
 .my-data i{
@@ -416,8 +417,8 @@ nav ul li a:hover::after {
   width: 60%;
 }
 .contact-form{
-  grid-template-rows: 30% 30% 30%;
-  row-gap: 10px;
+  grid-template-rows: 33% 33% 33%;
+  row-gap: 5px;
 }
 .contact_input{
   grid-template-columns: 50% 50%;  
@@ -433,7 +434,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
 }
 .contact_content input[type="text"], input[type="email"]{
-  border: none;
+  border: transparent;
   width: 250px;
   height: 40px;
   background: var(--first-color-lighter);
@@ -442,18 +443,17 @@ nav ul li a:hover::after {
 }
 .contact_subject{
   margin-inline:8px;
-  width: 97%;
   background: var(--first-color-lighter);
-  height: 75px;
+  height: 85px;
   text-align: left;
   padding-inline: 20px;
   padding-top: 5px;
   border-radius: 10px;
 }
 .contact_subject input[type="text"]{
-  border: none;
+  border: transparent;
   width: 100%;
-  height: 40px;
+  height: 50px;
   background: var(--first-color-lighter);
   color: var(--text-color);
   font-size: 16px;
@@ -520,7 +520,52 @@ footer h5{
   text-align: center;
   color: rgba(202, 202, 202, 0.856);
 }
+/* =========== Media Quaries ============ */
 
-@media screen and (max-width: 320px){
+/* =========== For Tablets [768px] ============ */
 
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .hero{
+        background-color: #000019; 
+  }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+  /* .hero{
+    background-color: #000019; 
+  } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .hero{
+    width: 90em;
+
+    padding-inline: 5rem;
+   }
+   .home-data{
+    width: 85%;
+   }
+   .home-profile{
+    width: 380px;
+   }
+   .home-profile img, .about-profile img{
+    width: 280px;
+    margin-top: 8%;
+    margin-left: 14%;
+   }
+  .uil-arrow-circle-left{
+      position: absolute;
+      top: 13rem;
+      left: 20px;
+    }
+  .uil-arrow-circle-right{
+      position: relative;
+      top: 13rem;
+      right: -790px;
+    }
+} 
